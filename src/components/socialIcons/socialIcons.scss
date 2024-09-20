@@ -1,0 +1,38 @@
+.social-icons {
+    display: flex;
+    gap: 10px;
+  
+    .icon {
+      display: inline-block;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #e1e1e1; // Default hover background color
+      }
+  
+      .facebook-icon {
+        color: #3b5998; // Facebook color
+        font-size: 24px;
+      }
+  
+      .github-icon {
+        color: #333; // GitHub color
+        font-size: 24px;
+      }
+  
+      .linkedin-icon {
+        color: #0e76a8; // LinkedIn color
+        font-size: 24px;
+      }
+  
+      .google-icon {
+        color: #db4a39; // Google color
+        font-size: 24px;
+      }
+    }
+  }
+  

@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { SocialIcons } from "./socialIcons/SocialIcons";
 
 const Login = () => {
   const handleSubmit = (event) => {
@@ -11,12 +12,13 @@ const Login = () => {
   return (
     <form onSubmit={handleSubmit}>
       <h1>Sign In</h1>
-      <div className="social-icons">
+      <SocialIcons/>
+      {/* <div className="social-icons">
         <a href="#" className="icon"><i className="fa-brands fa-google-plus-g"></i></a>
         <a href="#" className="icon"><i className="fa-brands fa-facebook-f"></i></a>
         <a href="#" className="icon"><i className="fa-brands fa-github"></i></a>
         <a href="#" className="icon"><i className="fa-brands fa-linkedin-in"></i></a>
-      </div>
+      </div> */}
       <span>or use your email for sign in</span>
       <input type="email" placeholder="Email" required />
       <input type="password" placeholder="Password" required />

@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "./Button";
+import { FaFacebookF, FaGithub, FaLinkedinIn, FaGooglePlusG } from "react-icons/fa";
+import { SocialIcons } from "./socialIcons/SocialIcons";
 
 const Signup = () => {
   const handleSubmit = (event) => {
@@ -11,12 +13,23 @@ const Signup = () => {
   return (
     <form onSubmit={handleSubmit}>
       <h1>Create Account</h1>
-      <div className="social-icons">
-        <a href="#" className="icon"><i className="fa-brands fa-google-plus-g"></i></a>
-        <a href="#" className="icon"><i className="fa-brands fa-facebook-f"></i></a>
-        <a href="#" className="icon"><i className="fa-brands fa-github"></i></a>
-        <a href="#" className="icon"><i className="fa-brands fa-linkedin-in"></i></a>
-      </div>
+      <SocialIcons/>
+      {/* <div className="social-icons">
+      {/* <div className="social-icons"> 
+      <a href="#" className="icon">
+        <FaFacebookF className="facebook-icon" />
+      </a>
+      <a href="#" className="icon">
+        <FaGithub className="github-icon" />
+      </a>
+      <a href="#" className="icon">
+        <FaLinkedinIn className="linkedin-icon" />
+      </a>
+      <a href="#" className="icon">
+        <FaGooglePlusG className="google-icon" />
+      </a>
+    {/* </div> 
+      </div> */}
       <span>or use your email for registration</span>
       <input type="text" placeholder="Name" required />
       <input type="email" placeholder="Email" required />

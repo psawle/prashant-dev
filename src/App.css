@@ -128,7 +128,7 @@ body{
     }
 }
 
-.social-icons{
+/* .social-icons{
     margin: 20px 0;
 }
 
@@ -141,7 +141,7 @@ body{
     margin: 0 3px;
     width: 40px;
     height: 40px;
-}
+} */
 
 .toggle-container{
     position: absolute;
@@ -208,3 +208,43 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+  
+    .icon {
+      display: inline-block;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #e1e1e1; 
+      }
+  
+      .facebook-icon {
+        color: #3b5998; 
+        font-size: 24px;
+      }
+  
+      .github-icon {
+        color: #333; 
+        font-size: 24px;
+      }
+  
+      .linkedin-icon {
+        color: #0e76a8; 
+        font-size: 24px;
+      }
+  
+      .google-icon {
+        color: #db4a39; 
+        font-size: 24px;
+      }
+    }
+  }
+  
+  
